@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Let Me Speak</title>
+    <style>
+      body {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 1rem;
+        background-color: #111827;
+        font-family: "Open Sans Condensed", sans-serif;
+      }
+
+      #text {
+        width: 100%;
+        height: 50vh;
+      }
+      h1 {
+        color: #7c3aed;
+        font-size: 3rem;
+      }
+      #text {
+        background-color: #7c3aed;
+        color: white;
+        font-size: larger;
+      }
+      #speed {
+        background-color: #7c3aed;
+        color: white;
+        font-size: 1.5rem;
+      }
+      label {
+        color: #7c3aed;
+        font-size: 2rem;
+      }
+      button {
+        background: transparent;
+        color: #7c3aed;
+        font-size: 1.5rem;
+        outline: none;
+        border: 0.1rem solid #7c3aed;
+        border-radius: 5%;
+        transition: all 0.3s ease-in-out;
+      }
+      button:hover {
+        background: #7c3aed;
+        color: white;
+      }
+    </style>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <h1>You Write , Let Me Speak !</h1>
+    <textarea id="text"></textarea>
+    <label for="speed">Speed</label>
+    <input
+      type="number"
+      name="speed"
+      id="speed"
+      min=".4"
+      max="6"
+      step=".2"
+      value="1"
+    />
+    <button id="play-button">Play</button>
+    <button id="pause-button">Pause</button>
+    <button id="stop-button">Stop</button>
+  </body>
+</html>
